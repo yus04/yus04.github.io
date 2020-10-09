@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>yus04</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+      <header id="header">
+        <div class="inner">
+          <nav>
+            <ul>
+              <li><a href="#menu">Menu</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li class="li-menu" onclick="OnButtonClick('top');">Top</li>
+          <li class="li-menu" onclick="OnButtonClick('works');">Works</li>
+          <li class="li-menu" onclick="OnButtonClick('skills');">Skills</li>
+        </ul>
+      </nav>
+
+      <div id="main">
+        <div class="inner">
+          <header>
+            <h1 id="top">yus's portfolio</h1>
+            <pre><code>
+print("welcome to yus's portfolio!")
+			</code></pre>
+          </header>
+          <h2 id="works">Works</h2>
+          <section class="tiles">
+            <article class="style1">
+              <span class="image">
+                <img src="images/cat1.jpg" alt="" />
+              </span>
+              <a href="detail.html">
+                <h2>Web Application</h2>
+                <div class="content">
+                  <p>PHP, Javascript, Laravel, React, SQL</p>
+                </div>
+              </a>
+            </article>
+            <article class="style2">
+              <span class="image">
+                <img src="images/cat2.jpg" alt="" />
+              </span>
+              <a href="detail.html">
+                <h2>Mobile Application</h2>
+                <div class="content">
+                  <p>React Native</p>
+                </div>
+              </a>
+            </article>
+            <article class="style3">
+              <span class="image">
+                <img src="images/cat3.jpg" alt="" />
+              </span>
+              <a href="detail.html">
+                <h2>RPA</h2>
+                <div class="content">
+                  <p>C, C++</p>
+                </div>
+              </a>
+            </article>
+            <article class="style4">
+              <span class="image">
+                <img src="images/cat4.jpg" alt="" />
+              </span>
+              <a href="detail.html">
+                <h2>AR</h2>
+                <div class="content">
+                  <p>Unity, C#</p>
+                </div>
+              </a>
+            </article>
+            <article class="style5">
+              <span class="image">
+                <img src="images/cat5.jpg" alt="" />
+              </span>
+              <a href="detail.html">
+                <h2>Machine Learning</h2>
+                <div class="content">
+                  <p>Python, Pytorch, numpy</p>
+                </div>
+              </a>
+            </article>
+            <article class="style6">
+              <span class="image">
+                <img src="images/cat6.jpg" alt="" />
+              </span>
+              <a href="detail.html">
+                <h2>Game</h2>
+                <div class="content">
+                  <p>Javascript</p>
+                </div>
+              </a>
+            </article>
+          </section>
+          <h2 id="skills" style="margin-top: 40px">Skills</h2>
+          <p>
+            C | C ++ | C # | Python | PHP | Javascript | Laravel | React | HTML
+            | CSS | SQL | Machine Learning | Computer Simulation
+          </p>
+          <p>FE, Fundamental Information Technology Engineer(2019)</p>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <div class="inner">
+          <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+              <li>
+                <a
+                  href="https://twitter.com/yuprog192"
+                  class="icon brands style2 fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/yus04/"
+                  class="icon brands style2 fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+            </ul>
+          </section>
+          <ul class="copyright">
+            <li>&copy; yus04. All rights reserved</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script language="javascript" type="text/javascript">
+      function OnButtonClick(id) {
+        var position = $("#" + id).offset().top;
+        $("html,body").animate(
+          {
+            scrollTop: position,
+          },
+          {
+            queue: false,
+          }
+        );
+        $("html,body").removeClass("is-menu-visible");
+      }
+    </script>
+  </body>
+</html>
